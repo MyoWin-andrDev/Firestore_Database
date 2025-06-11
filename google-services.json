@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "328145108416",
+    "project_id": "firestore-homework-f1ec1",
+    "storage_bucket": "firestore-homework-f1ec1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:328145108416:android:caba528b3cf306b8ee5c25",
+        "android_client_info": {
+          "package_name": "com.learning.firestore_homework"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbCY4VNN6PoTWO4c-x9V3w17kp6BNDxhM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

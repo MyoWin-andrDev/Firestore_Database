@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.learning.firestore_homework" />
+                  <option name="mobileSdkAppId" value="1:328145108416:android:caba528b3cf306b8ee5c25" />
+                  <option name="projectId" value="firestore-homework-f1ec1" />
+                  <option name="projectNumber" value="328145108416" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
