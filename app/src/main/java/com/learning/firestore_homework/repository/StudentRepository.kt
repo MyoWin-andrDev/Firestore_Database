@@ -4,6 +4,7 @@ import com.learning.firestore_homework.Utility.Constants.Operation.OP_ADD
 import com.learning.firestore_homework.Utility.Constants.Operation.OP_DELETE
 import com.learning.firestore_homework.Utility.Constants.Operation.OP_UPDATE
 import com.learning.firestore_homework.Utility.failedMessage
+import com.learning.firestore_homework.Utility.generalError
 import com.learning.firestore_homework.Utility.successMessage
 import com.learning.firestore_homework.model.StudentModel
 import com.learning.firestore_homework.service.database.StudentFireStore
@@ -39,6 +40,14 @@ class StudentRepository {
         Result.success(studentList.toObjects(StudentModel::class.java))
     }
     catch (e : Exception){
-        Result.failure(Exception(e.message))
+        Result.failure(Exception(generalError(e)))
+    }
+
+    suspend fun getLatestID() : Result<Int> = try {
+        val latestId = getAllStudent().getOrNull()?.maxByOrNull { it.id}?.id ?: 0
+        Result.success(latestId.inc())
+    }
+    catch (e : Exception){
+        Result.failure(Exception(generalError(e)))
     }
 }
